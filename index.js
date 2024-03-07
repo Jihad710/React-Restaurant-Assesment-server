@@ -28,7 +28,7 @@ async function run() {
     // Connect the client to the server	(optional starting in v4.7)
     await client.connect();
 
-    const menuCollection = client.db("bistroDb").collection("menu");
+    const menuCollection = client.db("chiloxDb").collection("menu");
 
     // menu related apis
     app.get("/menu", async (req, res) => {
